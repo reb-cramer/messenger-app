@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Chat Room</title>
+        <link type="text/css" rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div>
+            <div id="chat-window">
+                <ul id="messages">
+                    <li>
+                        <span>
+                            <i>Host: </i>Hello and welcome to the chat!
+                        </span>
+                    </li>
+                </ul>
+                <form id="message-form">
+                    <input type="text" id="message-input" placeholder="Enter a message">
+                    <button type="submit" id="message-button">Send</button>
+                </form>
+            </div>
+
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyAWFvxxAP9BdVz4-VO4FfbUSNZjkIZ8kxw",
+              authDomain: "messenger-app-7365a.firebaseapp.com",
+              projectId: "messenger-app-7365a",
+              storageBucket: "messenger-app-7365a.appspot.com",
+              messagingSenderId: "376756757937",
+              appId: "1:376756757937:web:5f4f5c9e014e49844f0990",
+              measurementId: "G-QCNSX0KFQL"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+    </body>
+
+</html>
